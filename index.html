@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ALLEGEDLY — Type Lab</title>
+
+  <!-- Google Fonts (all free + high quality luxury serif options) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Curated set: editorial + heritage + high-contrast -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=EB+Garamond:wght@400;500;600&family=Fraunces:opsz,wght@9..144,200..900&family=Libre+Bodoni:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="wrap">
+    <div class="brand">
+      <div class="kicker">ALLEGEDLY</div>
+      <h1>Type Lab</h1>
+      <p class="sub">
+        Find your “old-money base + slightly loud twist” embroidery wordmark.
+      </p>
+    </div>
+
+    <section class="panel">
+      <div class="row">
+        <label for="fontSelect">Font</label>
+        <select id="fontSelect">
+          <option value="Libre Bodoni">Libre Bodoni (high-contrast / fashion)</option>
+          <option value="Playfair Display">Playfair Display (editorial / modern classic)</option>
+          <option value="Cormorant Garamond">Cormorant Garamond (heritage / bookish)</option>
+          <option value="EB Garamond">EB Garamond (classic / understated)</option>
+          <option value="Cinzel">Cinzel (roman / “private club”)</option>
+          <option value="Prata">Prata (sharp / chic)</option>
+          <option value="Fraunces">Fraunces (quirky luxury twist)</option>
+        </select>
+      </div>
+
+      <div class="row two">
+        <div>
+          <label for="weight">Weight</label>
+          <input id="weight" type="range" min="200" max="900" step="50" value="600" />
+          <div class="hint"><span id="weightVal">600</span></div>
+        </div>
+        <div>
+          <label for="size">Size</label>
+          <input id="size" type="range" min="18" max="120" step="1" value="64" />
+          <div class="hint"><span id="sizeVal">64</span>px</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="tracking">Letter spacing (tracking)</label>
+        <input id="tracking" type="range" min="-0.05" max="0.35" step="0.01" value="0.14" />
+        <div class="hint"><span id="trackingVal">0.14</span>em</div>
+      </div>
+
+      <div class="row">
+        <label for="textInput">Text</label>
+        <input id="textInput" type="text" value="ALLEGEDLY" />
+        <div class="mini-actions">
+          <button data-preset="ALLEGEDLY">Core</button>
+          <button data-preset="OFF MARKET">Off Market</button>
+          <button data-preset="PRIVATE MEMBER">Private Member</button>
+          <button data-preset="INHERITED">Inherited</button>
+          <button data-preset="RESERVED">Reserved</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="mode">Embroidery vibe</label>
+        <select id="mode">
+          <option value="cream">Cream thread (luxury safe)</option>
+          <option value="gold">Antique gold (money but discreet)</option>
+          <option value="tonal">Tonal (quiet / insider)</option>
+          <option value="academic">Academic (burgundy / clubby)</option>
+        </select>
+      </div>
+    </section>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <article class="card cap stone">
+        <div class="capName">STONE</div>
+        <div class="embro" id="stonePreview">ALLEGEDLY</div>
+      </article>
+
+      <article class="card cap navy">
+        <div class="capName">NAVY</div>
+        <div class="embro" id="navyPreview">ALLEGEDLY</div>
+      </article>
+
+      <article class="card cap espresso">
+        <div class="capName">ESPRESSO</div>
+        <div class="embro" id="espressoPreview">ALLEGEDLY</div>
+      </article>
+
+      <article class="card cap charcoal">
+        <div class="capName">CHARCOAL</div>
+        <div class="embro" id="charcoalPreview">ALLEGEDLY</div>
+      </article>
+    </section>
+
+    <section class="specimens">
+      <h2>Specimen lines</h2>
+      <div class="spec" id="spec1">PRIVATE MEMBER • OFF MARKET • RESERVE</div>
+      <div class="spec" id="spec2">DISCREET WEALTH IS STILL WEALTH</div>
+      <div class="spec" id="spec3">IF YOU KNOW YOU KNOW</div>
+    </section>
+
+    <footer class="foot">
+      <p>
+        Next step: once you pick the closest base, we can “make it yours” by custom glyph edits
+        (R leg, serifs, spacing) and export a real font file.
+      </p>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
